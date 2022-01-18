@@ -9,7 +9,7 @@ body {
 
 
 #welcome {
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
     padding: 70px 100px;
 }
 
@@ -17,6 +17,7 @@ body {
     /* height: auto; */
     text-align: center;
     font-size: 50px;
+    /* margin-bottom: 100px; */
     /* background-color: black; */
 }
 
@@ -34,9 +35,9 @@ body {
 /* Hãy xem background, height nhiều zô, có khi sẽ auto, 100% */
 
 #what-we-do {
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
     /* width: auto; */
-    padding: 100px 50px;
+    padding: 50px;
     display: inline-block;
 }
 
@@ -44,7 +45,7 @@ body {
     /* background-color: black; */
     text-align: center;
     font-size: 50px;
-    /* margin: auto; */
+    margin: 50px;
 }
 
 
@@ -75,7 +76,7 @@ body {
 
 .item img{
     border-radius: 50%;
-    width: 100px;
+    /* width: 100px; */
 }
 
 
