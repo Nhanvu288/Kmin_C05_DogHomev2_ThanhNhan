@@ -36,7 +36,7 @@ body {
 #what-we-do {
     border: 2px solid orange;
     /* width: auto; */
-    padding: 50px 100px;
+    padding: 100px 50px;
     display: inline-block;
 }
 
@@ -44,7 +44,7 @@ body {
     /* background-color: black; */
     text-align: center;
     font-size: 50px;
-    margin: 0 0 20px 0;
+    /* margin: auto; */
 }
 
 
@@ -64,7 +64,7 @@ body {
     /* background-color: gray; */
     width: 80%;
     text-align: center;
-    margin: auto;
+    margin: auto auto 50px auto;
 }
 
 .item {
@@ -75,11 +75,12 @@ body {
 
 .item img{
     border-radius: 50%;
+    width: 100px;
 }
 
 
 header {
-    height: 768px;
+    height: 750px;
     background-image: url(img/1.jpg);
     background-size: cover;
     background-position: center;
@@ -127,6 +128,12 @@ header {
     color: white;
 }
 
+#Home {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 15px;
+}
 .nav a:hover {
     background-color: white;
     color: black;
@@ -165,10 +172,12 @@ header {
 .read_more {
     width: 100px;
     height: 50px;
-    padding: 10px 5px;
+    padding: 20px;
     border: 2px solid white;
     margin: auto; 
-
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
 }
 
 #label-list{
@@ -188,7 +197,6 @@ header {
 
 #statistics {
     background-image: url(img/bg.jpg);
-    height: 400px;
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -204,7 +212,6 @@ header {
 .statistics_container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     /* background-color: tomato; */
     height: 150px;
 }
@@ -287,16 +294,18 @@ header {
     margin: 5px;
 }
 
-.items_service > img {
-    width: 50px;
-    margin: 30px;
+.items_service > i {
+    margin: 20px auto;
+    font-size: 50px;
+    color: orange;
+    /* margin: 30px; */
 }
 
 .items_service > h3 {
-    margin-top: 5px;
-    font-size: 25px;
+    margin: 30px auto;
+    font-size: 30px;
 }
 
 .items_service > p {
-    margin: auto 40px;
+    margin: auto 20px;
 }
