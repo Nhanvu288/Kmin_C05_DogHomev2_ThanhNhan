@@ -87,7 +87,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     /* position: relative; */
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,12 +120,13 @@ header {
 .nav li {
     display: inline-block;
     /* background-color: whitesmoke; */
-    padding: 20px;
+    padding: 10px;
     
 }
 
 .nav a {
     text-decoration: none;
+    padding: 20px;
     color: white;
 }
 
@@ -138,7 +139,6 @@ header {
 .nav a:hover {
     background-color: white;
     color: black;
-    padding: 20px;
     border-radius: 15px;
 }
 
@@ -237,8 +237,8 @@ header {
 
 #services{
     height: 700px;
-    padding: 70px 50px 70px 100px;
-    border: 2px solid violet;
+    padding: 70px 0px 70px 155px;
+    /* border: 2px solid violet; */
     background-color: whitesmoke;
 }
 
@@ -250,7 +250,7 @@ header {
 
 .divwhole > div{
     padding: 10px;
-    margin: 10px;
+    /* margin: 10px; */
     line-height: 100%;
     text-align: center;
 }
@@ -260,14 +260,17 @@ header {
 #div_left{
     /* background-color: skyblue; */
     /* flex-grow: 4; */
-    width: 30%;
+    width: 33%;
     text-align: left;
-
 }
 
 #div_left h2 {
     font-size: 50px;
     margin-top: 10px;
+    background-color: rgba(128, 128, 128, 0.5);
+    height: 70px;
+    width: 298px;
+    padding: 30px 0;
 }
 
 #services p {
@@ -309,4 +312,246 @@ header {
 
 .items_service > p {
     margin: auto 20px;
+}
+
+
+
+#Testimonials{
+    width: 100%;
+    background-image: url(img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 50px 100px;
+}
+
+#Testimonials h2 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+#Testimonials img {
+    margin: 20px;
+    border-radius: 50%;
+}
+
+.Test_container {
+    overflow: auto;
+    margin: 50px 80px auto 100px;
+    text-align: center;
+}
+.Test_item {
+    float: left;
+    width: 28%;
+    margin-right: 50px;
+    color: white;
+}
+
+.Test_name{
+    color: orange;
+    text-align: right ;
+}
+
+
+#our_blog {
+    padding: 80px 100px;
+}
+
+#our_blog > h2 {
+    text-align: center;
+    font-size: 50px;
+}
+
+
+#our_blog_container {
+    display: flex;
+}
+
+.our_blog_item {
+    margin: 20px;
+    width: 30%;
+    border: 1px ridge rgba(128, 128, 128, 0.5)
+    
+}
+
+.our_blog_item img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.our_blog_item_para a {
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+}
+
+.date {
+    color: orange;
+}
+
+#our_blog_item3 {
+    padding-left: 20px;
+    box-shadow: 0 0 10px rgb(221, 221, 221)
+}
+
+.our_blog_item_para {
+    margin: auto auto 20px 20px;
+}
+
+
+#Contact-Us {
+    padding: 50px 200px 20px;
+    /* background-color: gray; */
+
+}
+
+.Contact-Us-container {
+    display: grid;
+    grid-template-columns: repeat(9,100px);
+    grid-template-rows: repeat(4,150px);
+    /* border: 5px solid rgb(221, 214, 214); */
+    /* column-gap: 20px; */
+}
+
+.Contact-Us-item-1 {
+    grid-column: 1/10;
+    /* background-color: salmon; */
+    /* place-self: center; */
+    font-size: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.Contact-Us-item-2 {
+    grid-area: 2/1/5/4;
+    /* background-color: seagreen; */
+}
+
+
+.Contact-Us-item-2 h3 {
+    font-size: 30px;
+    color: orange;
+}
+
+
+.Contact-Us-item-paragraph i {
+    font-size: 30px;
+    float: left;
+    width: 80px;
+    height: 90px;
+    margin-top: 5px;
+}
+
+.Contact-Us-item-paragraph h4 {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+
+.Contact-Us-item-paragraph p {
+    color: gray;
+}
+
+
+.Contact-Us-item-3 {
+    /* grid-area: 5/2/7/5; */
+    grid-column-start: 5;
+    grid-column-end: span 5;
+    grid-row-start: 2;
+    grid-row-end: span 3;
+    background-color: #f1f1f1;
+    padding: 30px;
+    box-shadow: 5px 5px 5px rgb(221, 214, 214);
+}
+
+
+.Contact-Us-item-3 div {
+    width: 300px;
+}
+
+.box{
+    padding: 10px 10px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+.Contact-Us-item-3 textarea {
+    padding: 10px 10px;
+    /* line-height: 28px; */
+    /* margin-bottom: 10px; */
+}
+
+
+#Contact-Us-submit{
+    background-color: orange;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    padding: 5px 10px;
+    border-radius:  5px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+
+}
+
+
+
+footer {
+    background-color: #17181b;
+    width: 100%;
+    padding: 70px 100px;
+    color: gray;
+    display: grid;
+    grid-template-columns: 210px 210px 210px 290px;
+    grid-template-rows: auto;
+    column-gap: 60px;
+}
+
+footer h4{
+    color: white;
+    font-size: 20px;
+}
+
+.white{
+    color: white;
+}
+
+.submit-place{
+    display: flex;
+}
+
+/* .float_effected {
+    position: relative;
+} 
+Tại sao khi dùng float, không thể tách h4 Connect with social ra khỏi đc, bị dính margin top???*/
+.footer-email{
+    padding: 15px 0 15px 10px;
+    font-size: 15px;
+    /* float: left; */
+}
+
+#submit-button{
+    padding: 15px 15px 12px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    /* float: left; */
+}
+
+footer ul {
+    overflow: auto;
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    float: left;
+}
+
+footer img {
+    width: 40px;
+    height: 35px;
+    margin-right: 10px;
 }

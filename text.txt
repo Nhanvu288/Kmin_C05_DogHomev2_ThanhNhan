@@ -1,0 +1,23 @@
+Nhân:
+Cái đầu tiên: Có nhất thiết phải có dùng flex trong tình huống này (header đầu tiên hình con chó).
+- Nhân cái đầu tiên 2 cái cần nắm: flex, space-between. Dùng inline block cho list
+Phần 2: Welcome
+Phần 3: What we do: dòng chữ với hình cần cách xa tí nữa.
+Phần 4: Statistic: không cần height + justifi-content cũng đc
+Phần 5: phức tạp nhất. Service. Cho service là cái flex luôn (đỡ divwhole):
+ - Có thể dùng icon font awsome.
+ - 
+
+Nguyễn Trung Đông:
+- Header: Readmore dùng thẻ a thì hợp lý hơn. Border-radius: 5px. Margin-bottom nên nhỏ lại, dùng px
+
+Nguyễn Thanh Hiền:
+- font awsome copy hình --> Font awsome cdn --> Chọn version trùng với hình --> Copy link code, quăng vào head html
+
+Hưng:
+- Lỗi ko canh giữa Readmore được: cho cái mainheader: margin: 0 auto --> Canh giữa được (dùng margin 0 auto là ok)
+- Hoặc margin: 100px auto 200px
+- Readmore ở trung tâm: padding 20px ở main-header-readmore
+Toàn:
+- Lỗi khác màn hình: 1920x1080 (FHD). Làm trên HD và full HD, kĩ hơn thì làm theo 2K (Resolution nó là bao nhiêu).
+- 
