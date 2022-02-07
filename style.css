@@ -81,7 +81,7 @@ body {
 
 
 header {
-    height: 750px;
+    /* height: 750px; */
     background-image: url(img/1.jpg);
     background-size: cover;
     background-position: center;
@@ -113,36 +113,35 @@ header {
     max-width: 1000px;
     max-height: 400px;
     margin-right: 30px;
-    padding: 0;
+    padding-top: 10px;
     text-align: center;
 }
 
 .nav li {
     display: inline-block;
     /* background-color: whitesmoke; */
-    padding: 10px;
-    
+    padding: 5px;
 }
 
 .nav a {
     text-decoration: none;
-    padding: 20px;
+    padding: 20px 15px;
     color: white;
 }
 
 #Home {
     background-color: white;
     color: black;
-    padding: 20px;
-    border-radius: 15px;
+    padding: 20px 15px;
+    border-radius: 5px;
 }
 .nav a:hover {
     background-color: white;
     color: black;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
-.arrow_down {
+/* .arrow_down {
     border: solid white;
     border-width: 0 2px 2px 0;
     display: inline-block;
@@ -150,13 +149,44 @@ header {
     margin-bottom: 3px;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+} */
+.dropdown {
+    position: relative;
+    /* display: inline-block; */
 }
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    /* min-width: 160px; */
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    /* z-index: -1; */
+}
+
+.dropdown-content a {
+    color: white;
+    /* padding: 12px 16px; */
+    text-decoration: none;
+    padding:  15px;
+    /* padding-left: 0px; */
+    display: block;
+    text-align: left;
+  }
+  
+  /* .dropdown-content a:hover {background-color: #ddd;} */
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
+
 #main-header {
     /* background-color: white; */
     color: white;
     text-align: center;
     width: 50%;
-    margin: 160px auto;
+    margin: 117px auto;
 }
 
 #main-header h1 {
@@ -173,10 +203,10 @@ header {
 .read_more {
     width: 100px;
     height: 50px;
-    padding: 20px;
+    padding: 15px;
     border: 2px solid white;
     margin: auto; 
-    border-radius: 10px;
+    border-radius: 5px;
     text-decoration: none;
     color: white;
 }
@@ -193,6 +223,7 @@ header {
     margin: 10px;
     background-color: white;
     opacity: 0.5;
+    cursor: pointer;
 }
 
 
@@ -236,7 +267,7 @@ header {
 
 
 #services{
-    height: 700px;
+    /* height: 700px; */
     padding: 70px 0px 70px 155px;
     /* border: 2px solid violet; */
     background-color: whitesmoke;
@@ -262,6 +293,7 @@ header {
     /* flex-grow: 4; */
     width: 33%;
     text-align: left;
+    padding-right: 85px;
 }
 
 #div_left h2 {
@@ -273,10 +305,14 @@ header {
     padding: 30px 0;
 }
 
+#services #div_left p {
+    line-height: 2.5;
+}
+
 #services p {
     font-size: 18px;
     color: gray;
-    line-height: 200%;
+    line-height: 150%;
 }
 
 #div_right{
@@ -292,11 +328,29 @@ header {
 .items_service{
     width: 45%;
     /* padding: 10px; */
-    background-color: white;
+    background: white;
     border: 7px;
     box-shadow: 5px 5px 5px rgb(221, 214, 214);
     margin: 5px;
+    padding: 50px;
 }
+
+#services .items_service:hover {
+    /* color: white; */
+    background-color: orange;
+}
+
+#services .items_service:hover i {
+    color: white;
+}
+
+#services .items_service:hover p {
+    color: white;
+}
+
+
+
+
 
 .items_service > i {
     margin: 20px auto;
@@ -379,12 +433,22 @@ header {
     width: 100%;
     margin-bottom: 10px;
 }
-.our_blog_item_para a {
+.our_blog_readmore {
     text-decoration: none;
     color: orange;
     font-weight: bold;
 }
 
+.our_blog_title {
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all 0.4s;
+}
+
+.our_blog_title:hover {
+    color: orange;
+}
 .date {
     color: orange;
 }
@@ -400,17 +464,17 @@ header {
 
 
 #Contact-Us {
-    padding: 50px 200px 20px;
+    padding: 50px 200px 40px;
     /* background-color: gray; */
 
 }
 
 .Contact-Us-container {
     display: grid;
-    grid-template-columns: repeat(9,100px);
+    grid-template-columns: auto;
     grid-template-rows: repeat(4,150px);
     /* border: 5px solid rgb(221, 214, 214); */
-    /* column-gap: 20px; */
+    column-gap: 120px;
 }
 
 .Contact-Us-item-1 {
@@ -424,7 +488,8 @@ header {
 
 
 .Contact-Us-item-2 {
-    grid-area: 2/1/5/4;
+    grid-area: 2/1/5/5;
+    margin-left: 40px;
     /* background-color: seagreen; */
 }
 
@@ -471,13 +536,21 @@ header {
 }
 
 .box{
-    padding: 10px 10px;
+    padding: 10px 15px;
     line-height: 28px;
     margin-bottom: 20px;
+    font: inherit;
+    width: 140%;
+    outline: none;
+    border: 1px solid #e6e6e6
 }
 
 .Contact-Us-item-3 textarea {
-    padding: 10px 10px;
+    padding: 10px 15px;
+    font: inherit;
+    width: 140%;
+    min-height: 180px;
+    resize: none;
     /* line-height: 28px; */
     /* margin-bottom: 10px; */
 }
@@ -493,7 +566,6 @@ header {
     display: inline-block;
     text-decoration: none;
     color: white;
-
 }
 
 
@@ -504,7 +576,7 @@ footer {
     padding: 70px 100px;
     color: gray;
     display: grid;
-    grid-template-columns: 210px 210px 210px 290px;
+    grid-template-columns: auto auto auto auto;
     grid-template-rows: auto;
     column-gap: 60px;
 }
